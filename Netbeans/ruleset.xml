@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ruleset name="PSR2">
+ <description>The PSR-2 coding standard modified for Netbeans IDE 8.0.</description>
+
+ <!-- Include the whole PSR-1 standard -->
+ <rule ref="PSR1"/>
+ <!-- Include the whole PSR-2 standard except for -->
+ <rule ref="PSR2">
+     <exclude name="Generic.Files.LineEndings"/>
+     <exclude name="PSR2.Classes.ClassDeclaration"/>
+     </rule>
+
+<rule ref="Netbeans.Classes.ClassDeclaration"/>
+
+</ruleset>
