@@ -121,8 +121,8 @@ class Netbeans_Sniffs_Classes_ClassDeclarationSniff extends PEAR_Sniffs_Classes_
 
         // Check after the class/interface name.
         $gap = $tokens[($className + 1)]['content'];      
-        if (strlen($gap) !== 1) {
-           $found = strlen($gap);
+        if (strlen($gap) !== 1 && $gap != "\r\n") {
+            $found = strlen($gap);
             $error = 'Expected 1 space after %s name; %s found';
             $data = array(
                 $classOrInterface,
